@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.topbar-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.topbar {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.scrollmenu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 90%;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  width: 75%;
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.grid a {
+  display: block;
+  padding: 20px;
+  background-color: #d0d0d4;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.grid a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+      width: 200px;
+  }
+  .content {
+      width: 75%;
+      margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topbar-container, .scroll-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+  .sidebar a {
+      text-align: center;
+      padding: 12px;
+  }
+  .content {
+      width: 100%;
+      margin-left: 0;
+      padding: 15px;
+  }
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+      height: 30px;
+      width: 30px;
+  }
+  .topbar {
+      flex-wrap: wrap;
+  }
+  .scrollmenu a {
+      padding: 10px;
+      font-size: 14px;
+  }
+  .content h1 {
+      font-size: 24px;
+  }
+  .content p {
+      font-size: 16px;
+  }
+  .grid {
+      grid-template-columns: 1fr;
+  }
+  .ex, .quiz, .exercise {
+      width: 100%;
+  }
+}
