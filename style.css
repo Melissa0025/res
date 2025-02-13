@@ -194,6 +194,7 @@ hr {
   margin: 20px 0;
   background-color: #c7dbd3;
   padding: 30px;
+  width: 100%;
 }
 
 .content a {
@@ -204,6 +205,9 @@ hr {
   text-align: left;
 }
 
+.content2{
+  width: 100%;
+}
 .content2 h2{
   font-size: 30px;
   padding-top: 15px;
@@ -216,6 +220,7 @@ hr {
 .content3 {
   background-color: #e0dede;
   padding: 20px;
+  width: 100%;
 }
 
 .cont3-btn{
@@ -234,15 +239,18 @@ hr {
 
 .content3 p{
   font-size: 25px;
+  width: 100%;
 }
 
 .code{
   background-color: #ffffff;
   font-size: 18px;
+  width: 100%;
 }
 
 .content4 {
   font-size: 20px;
+  width: 100%;
 }
 
 .cont4-btn{
@@ -266,18 +274,24 @@ hr {
 .examples{
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 100%;
+}
+
+.exercise{
+  width: 100%;
 }
 
 .exercise p{
   font-size: 20px;
+  width: 100%;
 }
 
 .ex{
   background-color: #333;
   color: #fff;
-  width: 70%;
   border-radius: 8px;
   padding: 10px;
+  width: 100%;
 }
 
 .ex h2{
@@ -297,6 +311,7 @@ hr {
   margin-bottom: 10px;
   border-radius: 3px;
   padding: 10px;
+  width: 80%;
 }
 
 .ans:hover{
@@ -332,6 +347,10 @@ background-color: #02885c;
 background-color: #02885c;
 }
 
+.quiz{
+  width: 100%;
+}
+
 .quiz p{
   font-size: 20px;
 }
@@ -350,8 +369,16 @@ background-color: #02885c;
 background-color: #1f7eaa;
 }
 
+.learn{
+  width: 100%;
+}
+
 .learn p{
   font-size: 20px;
+}
+
+.ref{
+  width: 100%;
 }
 
 .ref p{
@@ -392,8 +419,12 @@ background-color: #1f7eaa;
   }
 
   .topbar {
-      flex-wrap: wrap; /* Allow wrapping */
-      justify-content: space-between; /* Distribute items */
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
   }
 
   .topbar > div {
@@ -433,6 +464,19 @@ background-color: #1f7eaa;
     padding: 80px 20px;
     box-sizing: border-box;
 }
+
+.ex {
+  width: 100%; /* Full width on mobile */
+  margin: 10px 0; /* Adjust margins as needed */
+  box-sizing: border-box; /* Include padding/border in width */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.ans {
+  margin-left: 20px; /* Adjust left margin as needed */
+  margin-right: 20px; /* Adjust right margin as needed */
+}
+
 }
 
 
