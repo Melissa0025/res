@@ -4,8 +4,8 @@
 		<title>HTML Tutorials</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div class = "topbar-container">
@@ -54,6 +54,9 @@
 		<div class="scroll-container">
 			<button class="scroll-btn left-btn" onclick="document.querySelector('.scrollmenu').scrollLeft -= 150;">❮</button>
 			<div class = "scrollmenu">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 				<a class = "active" href="https://www.w3schools.com/html/default.asp">HTML</a> 
 				<a href="https://www.w3schools.com/css/default.asp">CSS</a> 
 				<a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a> 
@@ -98,7 +101,8 @@
 			<button class="scroll-btn right-btn" onclick="document.querySelector('.scrollmenu').scrollLeft += 150;">❯</button>
 			</div>
 			
-			<div class = "sidebar">
+			<div class = "sidebar" id = "mySidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 				<div>
 					<h2> HTML tutorial </h2>
 					<a class = "active" href="https://www.w3schools.com/html/default.asp">HTML HOME</a><br>
@@ -361,7 +365,9 @@
 					<a href="#">Keyboard Shortcuts</a>
 				</div>
 			</div>
+
 		</div>
 
+		<script src="script.js"></script> 
 	</body>
 </html>
