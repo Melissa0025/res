@@ -427,27 +427,6 @@ background-color: #1f7eaa;
     align-items: center;
   }
 
-  .topbar > div {
-      margin-bottom: 10px; /* Add spacing between elements */
-      flex: 1 1 auto; /* Distribute space evenly */
-  }
-
-  .topbar > div:nth-child(2) {
-      flex: 3 1 auto; /* Make select groups take more space */
-  }
-
-  .topbar > div:nth-child(3) {
-      flex: 2 1 auto; /* Make search bar take more space */
-  }
-
-  .topbar > div:nth-child(4) {
-      flex: 3 1 auto; /* Make links group take more space */
-  }
-
-  .topbar > div:nth-child(5) {
-      flex: 2 1 auto; /* Make buttons group take more space */
-  }
-
   .icon {
       display: block;
   }
@@ -478,6 +457,3 @@ background-color: #1f7eaa;
 }
 
 }
-
-
-
